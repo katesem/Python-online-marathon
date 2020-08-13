@@ -1,11 +1,7 @@
 def order(a):
-
     if a == sorted(a, reverse=False):
-        s = 'ascending'
-        return s
+        return 'ascending'
     elif a == sorted(a, reverse=True):
-        s = 'descending'
-        return s
+        return 'descending'
     else:
-        s = 'not sorted'
-        return s
+        return 'not sorted'
