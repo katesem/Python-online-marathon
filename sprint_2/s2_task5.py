@@ -2,7 +2,7 @@ import re
 
 def max_population(s):
     r = int(max([re.sub(r"[,_a-z]", "", i[4:]) for i in s]))
-    return (tuple([i for i in s if str(r) in i][0].split(','))[1],r)
+    return ([i for i in s if str(r) in i][0].split(',')[1],r)
     
     
 #Test Example :   
